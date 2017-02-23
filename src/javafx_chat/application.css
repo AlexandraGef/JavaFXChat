@@ -1,0 +1,101 @@
+
+
+.root
+{
+    -fx-background-image: url("backk_1.jpg");
+}
+
+Label {
+
+    -fx-text-fill: #ffd9f9;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;     
+
+}
+
+
+ListView{
+    -fx-background-color:
+        linear-gradient(#990099, #ffd9f9),
+        radial-gradient(center 60% -80%, radius 300%, #ffffff 45%, #ffbeee 50%);
+
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fce5f4;
+    -fx-font-size: 15px;
+
+}
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+
+    -fx-background-color: linear-gradient(#b60074 0%, #d70088 25%, #ff69c8 75%, #eee 100%);
+    -fx-text-fill: white;
+}
+.list-cell { -fx-text-fill: #d70088; }
+.list-cell:odd { -fx-background-color: white; }
+.list-cell:even { -fx-background-color: #fcbde5;}
+.list-cell:filled:hover { 
+    -fx-background-color: #d70088; 
+    -fx-text-fill: #ffd9f9; 
+}
+CheckBox{
+
+    -fx-font-weight: bold;
+    -fx-text-fill: #fce5f4;
+    -fx-font-size: 16px; 
+}
+
+TextField{
+    -fx-background-color:
+        linear-gradient(#ffccff , #ff66ff),
+        radial-gradient(center 50% -40%, radius 200%, #ffffff 45%, #ffccff 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+
+    -fx-border-width: 4px;
+    -fx-border-style: solid;
+    -fx-border-color: #ffbeee;
+    -fx-border-radius: 6px;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.7), 6, 0.0, 0, 2);
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: #990099;
+}
+
+
+.button
+{
+    -fx-background-color:
+        linear-gradient(#990099, #ffd9f9),
+        radial-gradient(center 50% -40%, radius 200%, #fd4cbd 45%, #b60074 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #fce5f4;
+    -fx-font-weight: bold;
+
+
+
+}
+
+.button:hover
+{
+    -fx-background-color:
+        linear-gradient(#ffccff , #ff66ff),
+        radial-gradient(center 50% -40%, radius 200%, #ff99ff 45%, #f56dcc 50%);
+    -fx-text-fill: #990099;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-font-weight: bold;
+}
+
+.button:pressed
+{
+    -fx-background-color:
+        #ffccff,
+        linear-gradient(rgb(197, 52, 139), rgb(176, 22, 114), rgba(228, 108, 228, 0.6));
+    -fx-text-fill: #ff99ff;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-font-weight: bold;
+}
